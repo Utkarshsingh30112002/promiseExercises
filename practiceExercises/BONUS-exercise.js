@@ -11,7 +11,7 @@
     HINT2: You can Google for something like:
            "resolve 2 promises at the same time javascript"
 */
-function sum() {
+export function sum() {
   const promise1 = new Promise((resolve) => {
     setTimeout(() => {
       resolve(10);
@@ -27,4 +27,3 @@ function sum() {
     console.log(ans);
   });
 }
-sum();

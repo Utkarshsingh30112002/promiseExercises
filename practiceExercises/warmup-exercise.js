@@ -15,11 +15,10 @@ function createPromise() {
   });
   return promise;
 }
-function run() {
+export function run() {
   console.log("Program started");
   const promise = createPromise();
   console.log(promise);
   console.log("program is running");
   promise.then((message) => console.log(message));
 }
-run();

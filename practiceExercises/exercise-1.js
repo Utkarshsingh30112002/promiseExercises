@@ -23,7 +23,7 @@ function createPromise(){
     })
     return promise;
 }
-function run(){
+export function run(){
     console.log("Program started")
     const promise=createPromise()
     console.log(promise)
@@ -32,4 +32,3 @@ function run(){
     .then((message)=>console.log(message))
     .catch((message)=>console.log(message))
 }
-run()

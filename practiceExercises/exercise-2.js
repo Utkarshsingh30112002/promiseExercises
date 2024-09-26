@@ -26,7 +26,7 @@ function createPromise(message1,message2){
    })
    return promise
 }
-function run(){
+export function run(){
    console.log("Program started")
    let promise = createPromise("Step 1 complete","Step 2 completed")
    console.log(promise)
@@ -34,4 +34,3 @@ function run(){
    promise.then((message)=>console.log(message))
 
 }
-run()

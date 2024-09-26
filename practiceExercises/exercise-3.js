@@ -29,7 +29,7 @@
 
     BONUS: WHY does it work this way?
 */
-function createPromise() {
+export function createPromise() {
   console.log("Program started");
   const promise = new Promise((resolve) => {
     setTimeout(() => {
@@ -63,4 +63,3 @@ function createPromise() {
     })
     .then((message) => console.log(message));
 }
-createPromise();
